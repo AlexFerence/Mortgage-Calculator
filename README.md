@@ -53,7 +53,7 @@ Unit and integration tests are located within the `src/tests/` directory. The AP
 
 The application is hosted on [Heroku](https://www.heroku.com/platform). For access, please reach out to the repository owner for the specific URL.
 
-### To Run Locally
+##To Run Locally
 1. Ensure you have Maven and Java 17 or greater running on your machine. Verify by running `java -version`
 2. Clone the repository using `git clone https://github.com/AlexFerence/Mortgage-Calculator.git` and navigate to the project directory
 3. Run `./mvnw clean install` to build the project
