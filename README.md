@@ -31,7 +31,7 @@ The response will be a JSON object with the following properties:
 
 - `monthlyPayment` (double): The calculated monthly payment.
 
-### Example Response
+#### Example Response
 ```json
 {
       "monthlyPayment": 718.47
@@ -40,8 +40,11 @@ The response will be a JSON object with the following properties:
 
 ## API Specs
 
+This API is constructed using Java Spring, leveraging its dependency injection capabilities to streamline the development process. It utilizes spring-boot-starter-web for creating RESTful endpoints. Additionally, it employs the spring-boot-starter-validation package to ensure the integrity of incoming data by validating inputs and promptly returning error messages when necessary.
+
 #### Testing
 
+This API leverages `JUnit` and `MockMVC` from the spring-boot-starter-test package for testing, enhancing both unit and integration tests.
 Unit and integration tests are located within the `src/tests/` directory. The API boasts a robust test suite with  100% code coverage for the application, as demonstrated by the screenshot provided.
 
 ![Screen Shot 2024-02-25 at 3 22 35 PM](https://github.com/AlexFerence/Mortgage-Calculator/assets/40876788/be2d1115-898f-47d5-9a9d-c720acaf3a25)
@@ -52,7 +55,7 @@ The application is hosted on [Heroku](https://www.heroku.com/platform). For acce
 
 ### To Run Locally
 1. Ensure you have Maven and Java 17 or greater running on your machine. Verify by running `java -version`
-2. Clone the repository using `git clone ` and navigate to the project directory
+2. Clone the repository using `git clone https://github.com/AlexFerence/Mortgage-Calculator.git` and navigate to the project directory
 3. Run `./mvnw clean install` to build the project
 4. Then run `./mvnw spring-boot:run` to run the server.
 5. The server will be running on `http://localhost:8080`
